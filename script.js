@@ -44,3 +44,16 @@ overlay.classList.remove("hidden"); */
 }) */
 
 overlay.addEventListener("click", closeModal);
+
+
+
+//key press 
+document.addEventListener("keydown", function(e){
+/* console.log("key was pressed") */
+
+if (e.key === "Escape" && !modal.classList.contains
+    ("hidden")){
+        closeModal();
+    }
+}
+)
